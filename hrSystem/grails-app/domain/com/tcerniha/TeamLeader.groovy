@@ -5,7 +5,7 @@ class TeamLeader {
 	String department
 	String employeeID
 	String sectionName
-	int officePhone
+	String officePhone
 	String leaderEmail
 	String password
 	
