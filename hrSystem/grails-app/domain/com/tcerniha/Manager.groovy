@@ -6,7 +6,13 @@ class Manager {
 	String password
 	String managerEmail
 	String office
-	String department	
+	String department
+
+	String toString(){
+		return fullName
+	}
+
+	static hasMany=[teamLeaders:TeamLeader, employees:Employee]	
 
     static constraints = {
 	fullName blank:false, nullable:false

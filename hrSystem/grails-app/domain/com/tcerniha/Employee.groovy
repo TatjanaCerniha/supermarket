@@ -2,15 +2,28 @@
 package com.tcerniha
 
 class Employee {
+	String employeeID
 	String fullName
 	Date dateOfBirth
 	String residence
 	double horlyRate 
-	String employeeID
 	Date dateEmployed
 	String taxCode
 	String contract
 
+	TeamLeader teamLeader
+	Shift shift
+	Manager manager
+	Team team
+	Task task
+
+	String toString(){
+		return fullName
+	}
+	
+	static belongsTo=[Team]
+
+	
     static constraints = {
 	fullName blank:false, nullable:false
 	dateOfBirth blank:false, nullable:false
@@ -20,5 +33,10 @@ class Employee {
 	dateEmployed blank:false, nullable:false
 	taxCode blank:false, nullable:false, size:1..5
 	contract blank:false, nullable:false
+	shift blank:false, nullable:false
+	teamLeader blank:false, nullable:false
+	manager blank:false, nullable:false
+	team blank:false, nullable:false
+	task blank:false, nullable:false
     }
 }
