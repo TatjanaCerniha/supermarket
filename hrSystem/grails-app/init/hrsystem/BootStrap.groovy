@@ -4,7 +4,7 @@ class BootStrap {
 
     def init = { 
 
-	def manager1 = new Manager(
+	/* def manager1 = new Manager(
 		fullName: 'Steve Crosbar',
 		userName: 'scross',
 		password:'secret2018',
@@ -203,11 +203,7 @@ class BootStrap {
 	manager1.addToEmployees(employee1)
 	manager1.addToEmployees(employee2)
 
-	//teamLeader1.addToTeams(team1)
-	//teamLeader2.addToTeams(team2)
-	//teamLeader3.addToTeams(team3)
-	//teamLeader4.addToTeams(team4)
-
+	
 	task1.addToTeams(team1)
 	task1.addToTeams(team3)
 	
@@ -225,7 +221,7 @@ class BootStrap {
 	shift1.addToTasks(task1)
 
 	task1.addToEmployees(employee1)
-	task1.addToEmployees(employee2)	
+	task1.addToEmployees(employee2)	*/
 	
 	
    }

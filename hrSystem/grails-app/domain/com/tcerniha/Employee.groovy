@@ -23,7 +23,7 @@ class Employee {
 	
 	static belongsTo=[Team]
 
-
+	// this need for unit testing
 	double calculateWagePerWeek(){
 		horlyRate*4*2
 	}
@@ -37,11 +37,11 @@ class Employee {
 	employeeID blank:false, nullable:false, size:1..6
 	dateEmployed blank:false, nullable:false
 	taxCode blank:false, nullable:false, size:1..5
-	contract blank:false, nullable:false
+	contract blank:false, nullable:false, inList:['full-time','part-time']
 	shift blank:false, nullable:false
 	teamLeader blank:false, nullable:false
 	manager blank:false, nullable:false
 	team blank:false, nullable:false
-	task blank:false, nullable:false
+	task blank:true, nullable:true
     }
 }

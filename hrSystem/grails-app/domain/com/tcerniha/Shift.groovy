@@ -18,7 +18,7 @@ class Shift {
 
     static constraints = {
 	timeOfDay  blank:false, nullable:false, inList: ['Morning', 'Afternoon', 'Evening']
-	dayOfWeek blank:false, nullable:false, inList: ['Monday', 'Tuesday','Wednesday','Thursday','Friday', 'Saturday','Sunday']
+	dayOfWeek blank:false, nullable:false
 	numberOfHours blank:false, nullable:false, min:4, max:8
 	startingTime blank:false, nullable:false
     }
