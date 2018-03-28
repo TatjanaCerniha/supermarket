@@ -48,7 +48,7 @@ class BootStrap {
              
 	def teamLeader2 = new TeamLeader(
 		fullName: 'Andrew Smeaton',
-		department: 'Elictronics',
+		department: 'Electronics',
 		employeeID: 'TL1124',
 		sectionName: 'Goods',
 		officePhone: '01111787',
@@ -63,7 +63,7 @@ class BootStrap {
 		sectionName: 'TV',
 		officePhone: '01111778',
 		leaderEmail: 'lhend@email.com',
-		password: 'secret1',
+		password: 'secret18',
 		manager: manager2		
 		).save() 
 	def teamLeader4 = new TeamLeader(
