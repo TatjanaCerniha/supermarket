@@ -23,6 +23,11 @@ class Employee {
 	
 	static belongsTo=[Team]
 
+
+	double calculateWagePerWeek(){
+		horlyRate*4*2
+	}
+
 	
     static constraints = {
 	fullName blank:false, nullable:false

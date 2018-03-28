@@ -11,8 +11,13 @@ class TeamSpec extends Specification implements DomainUnitTest<Team> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void mergeData() {
+       when:"Team has teamName and sectionName"
+	def packing=new Team (
+		teamName: 'Team Packing',		
+		sectionName: 'Butcher'	
+	)
+	then:"the toString method will merge them."
+	packing.toString()=='Team Packing, Butcher'
     }
 }

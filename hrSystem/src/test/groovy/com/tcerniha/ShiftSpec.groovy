@@ -11,8 +11,15 @@ class ShiftSpec extends Specification implements DomainUnitTest<Shift> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void validatingShift() {
+       when:"Shift is created with time Of Day and number Of Hours"
+	def shiftMon = new Shift(
+		timeOfDay: 'Morning',
+		numberOfHours: 4
+	)
+	then: 'Validation should fail'
+	shiftMon.validate()
+
+	
     }
 }

@@ -6,12 +6,18 @@ class Team {
 	String sectionName
 	String description
 	Shift shift
+	TeamLeader teamLeader
+	
+	static hasMany=[employees:Employee, tasks:Task]
 
 	String toString(){
+		
+		// testing domain class Team using a method toString()
+		return "$teamName, $sectionName"
+
 		return teamName
 	}
 
-	static hasMany=[employees:Employee, tasks:Task]
  
     static constraints = {
 	teamName blank:false, nullable:false
@@ -19,5 +25,6 @@ class Team {
 	sectionName blank:false, nullable:false
 	description blank:false, nullable:false, maxSize:5000, widget:'textarea'
 	shift blank:false, nullable:false
+	teamLeader blank:false, nullable:false
     }
 }
