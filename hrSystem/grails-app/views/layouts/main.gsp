@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <!-- <div class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -34,7 +34,11 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>  -->
+	<div class= "row">
+		<asset:image src = "supermarket.jpg"  align= "center"  width = "900px" height="300" />
+		<g:loginToggle />
+	</div>
 
     <g:layoutBody/>
 
