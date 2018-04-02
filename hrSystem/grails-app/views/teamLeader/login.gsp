@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name = "layout" content = "main" />
-	<title>Manager Login</title>
+	<title>Team Leader Login</title>
 	<asset:link rel="icon" href="favicon.ico" type="image/x-ico" />	
 	<asset:stylesheet src = "home.css" />
 </head>
@@ -21,10 +21,10 @@
 		<table>
        		    <tr class="prop">
          	       <td class="name">
-         	         <label for="userName">User Name:</label>
+         	         <label for="leaderEmail">Email:</label>
           	       </td>
          	       <td class="value">
-          	 	 <input type="text" id="userName" name="userName" value="">
+          	 	 <input type="text" id="leaderEmail" name="leaderEmail" value="">
           		</td>
 		   </tr>
         	   <tr class="prop">
@@ -37,8 +37,7 @@
 		   </tr>
         	   <tr><td></td>
          	        <td>
-			  <button type="submit" value="login">Login</button>
-           		 
+			  <button type="submit" value="login">Login</button>           		
           		</td></tr>
       		</table>
     	</g:form>

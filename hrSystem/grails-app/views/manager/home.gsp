@@ -6,6 +6,14 @@
 	<asset:stylesheet src = "home.css" />
 </head>
 <body>
+   <div class= "row">
+   <div class = "second">
+	<h3>Search Employee Form </h3>	
+	<button type= "button" class = "btn btn-success">
+	    <g:link controller = "employee" action = "search">Search Employee</g:link>
+	</button>
+   </div>
+  </div>
    </div class = "container">
     <div class = "row">
         <section>         
@@ -30,6 +38,11 @@
 		  <div class = "col-sm-3">			
 			<button type = "button button1" class= "btn btn-success">
 			    	<g:link controller = "shift" action = "create">Create a Shift</g:link>
+			</button><br>
+		 </div>	
+		   <div class = "col-sm-3">			
+			<button type = "button button1" class= "btn btn-success">
+			    	<g:link controller = "employee" action = "index">Assign Employees to Team</g:link>
 			</button><br>
 		 </div>		     
              </div>

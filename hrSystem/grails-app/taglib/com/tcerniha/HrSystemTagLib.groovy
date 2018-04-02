@@ -7,7 +7,7 @@ class HrSystemTagLib {
 	// define a custom tag loginToggle
 	 def loginToggle= {
 
-		out << "<div style='margin:15px 0 40px;'>"
+		out << "<div style='margin:5px 0 20px;'>"
       		  if (request.getSession(false) && session.user){
 
 			// this code dispaly Welcome messaage
@@ -18,12 +18,20 @@ class HrSystemTagLib {
 			//if the session has been created Create LOGOUT link
 		  	 out << "<a href='${createLink(controller:'manager',action:'logout')}'>"
 			 out << "Logout</a></span>"
+
+			//if the session has been created Create LOGOUT link
+		  	 out << "<a href='${createLink(controller:'teamLeader',action:'logout')}'>"
+			 out << "Logout</a></span>"
 		   }
 			//if a session has been not created a LOGIN link is created
 		else {	
 			out << "<span style='float:right; margin-right:20px'>"
 			out << "<a href='${createLink(controller:'manager', action:'login')}'>"
-			out << "Login</a></span>"
+			out << "Login Manager</a></span>"
+
+			out << "<span style='float:right; margin-right:20px'>"
+			out << "<a href='${createLink(controller:'teamLeader', action:'login')}'>"
+			out << "Login TeamLeader</a></span>"
 		}
 
 		out << "</div><br/>"
