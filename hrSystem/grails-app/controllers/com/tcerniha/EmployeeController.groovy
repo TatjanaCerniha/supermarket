@@ -8,21 +8,17 @@ class EmployeeController {
 		
 	}	
 	
-	def advResult(){	
-	
-		def employeeProps = Employee.metaClass.properties*.name
-		// list of employees
-		def employees= Employee.with Criteria{
-			"${params.queryType}"{
-				params.each{
-			   	field, value->
-					if (employeeProps.grep(field) && value){
-						ilike(field, value)				
-					}
-				}
-			}
+	def advResults(){
+		def employeeProps = Employee.metaClass.properties*.name		
+		def employees = Employee.withCriteria {
+			"${params.queryType}" {			   
+			    params.each {field,value ->
+				if (employeeProps.grep(field) && value){
+				   ilike(field, value)			   
+       				}
+			    }
+			 }
 		}
+		return[employees:employees]
 	}
-	//return[employees:employees]
-
 }

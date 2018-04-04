@@ -8,17 +8,17 @@ class TeamLeaderController {
 
 	}
 	
-
 	// validate login details
 	def validate(){
 		
 		def user=TeamLeader.findByLeaderEmail(params.leaderEmail)
+		
 		if (user && user.password == params.password){
 			session.user = user
 			render view:'home'
 		}
 		else {
-			flash.message = "Invalid leaderEmail and password"
+			flash.message = "Invalid leaderEmail and password"			
 			render view:'login'
 		}
 	}

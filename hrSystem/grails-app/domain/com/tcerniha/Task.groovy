@@ -18,7 +18,7 @@ class Task {
 	static belongsTo=[Team, Employee]
 
     static constraints = {
-	taskName blank:true, nullable:true
+	taskName blank:false, nullable:false
 	numberOfPeople blank:false, nullable:false, min:2, max:10
 	sectionName blank:false, nullable:false
 	department blank:false, nullable:false

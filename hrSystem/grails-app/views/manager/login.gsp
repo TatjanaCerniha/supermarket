@@ -37,8 +37,7 @@
 		   </tr>
         	   <tr><td></td>
          	        <td>
-			  <button type="submit" value="login">Login</button>
-           		 
+			  <button type="submit" value="login">Login</button>           		 
           		</td></tr>
       		</table>
     	</g:form>

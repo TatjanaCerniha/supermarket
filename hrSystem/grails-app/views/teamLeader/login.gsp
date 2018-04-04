@@ -21,15 +21,15 @@
 		<table>
        		    <tr class="prop">
          	       <td class="name">
-         	         <label for="leaderEmail">Email:</label>
-          	       </td>
-         	       <td class="value">
-          	 	 <input type="text" id="leaderEmail" name="leaderEmail" value="">
-          		</td>
-		   </tr>
+         	           <label for="leaderEmail">Email:</label> 				
+          	       </td>	
+			<td class="value">
+           	 	   <input type="leaderEmail" id="leaderEmail" name="leaderEmail" value="">
+          		</td>	              	    
+		    </tr>
         	   <tr class="prop">
         	 	<td class="name">
-          	  	  <label for="password">Password:</label>
+          	  	    <label for="password">Password:</label>
          	 	</td>
           		<td class="value">
            	 	   <input type="password" id="password" name="password" value="">

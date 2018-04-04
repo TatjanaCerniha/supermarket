@@ -7,18 +7,16 @@
 </head>
 <body>
    <div class= "row">
-   <div class = "second">
-	<h3>Search Employee Form </h3>	
-	<button type= "button" class = "btn btn-success">
-	    <g:link controller = "employee" action = "search">Search Employee</g:link>
-	</button>
+   <div class = "first">
+	<h3>Search Employees </h3><br>	
+	<!-- <button type= "button" class = "btn btn-success">  </button> -->
+	    <g:link controller = "employee" action = "advSearch">Search Employee</g:link>	
    </div>
   </div>
    </div class = "container">
     <div class = "row">
         <section>         
-            <div id="controllers" role="navigation">
-                <h2>Available Choices:</h2>
+            <div id="controllers" role="navigation">               
 		<div class = "row">	
 		  <div class = "col-sm-3">		
 			<button type = "button button1" class= "btn btn-success">
@@ -50,6 +48,5 @@
         </section>
   </div>
  </div>
-
 </body>
 </html>

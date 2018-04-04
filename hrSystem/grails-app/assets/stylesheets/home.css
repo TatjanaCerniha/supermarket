@@ -1,26 +1,23 @@
-.button {
-    background-color: ##6C3483; 
+.btn-succes {
+    background-color: ##000066; 
     border: none;
     color: white;
-    padding: 35px 50px;
+    padding: 35px 40px;
+    text colour: white;
     text-align: center;
     text-decoration: none; 
-    font-size: 20px;
-    margin: 6px 4px;
+    font-size: 25px;
+    margin: 10px 4px;
     cursor: pointer;
-}
-.button1 {
      border-radius: 12px;
      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.button1:hover {
-    background-color: #6C3483;
+
+.btn-succes:hover {
+    background-color: #6666ff;
     color: white;
 }
-.btn-success{
-    background-color: #6C3483;
-    border-color: #6C3483;
-}
+
 
 h3{
   font-family:sans-serif;

@@ -4,14 +4,15 @@
     <meta name="layout" content="main"/>
     <title>Supermarket Employee Search</title>
     <asset:stylesheet src= "home.css" />
+    <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />	
 </head>
 <body>
    <div class= "row">
-	<h1>Supermarket Employee Search</h1>
+	
    	<formset>
-		<legend>Search for Employee</legend>
+		<legend>Search for Employees</legend>
 		  <table>
-			<g:form action= "advResult">
+			<g:form action= "advResults">
 			    <tr>
 				<td>Full Name</td>
 				<td><g:textField name="fullName" /></td>
@@ -26,18 +27,17 @@
 			    </tr>
 			    <tr>
 				<td>Query Type:</td>
-				<td><g:radioGroup name="qyeryType" labels = "['And', 'Or', 'Not']"
+				<td><g:radioGroup name="queryType" labels = "['And', 'Or', 'Not']"
 				        values= "['and', 'or', 'not']" value = "and" >
-					${it.radio} ${it.label} </g:radioGroup>
+					${it.radio} ${it.label} 
+				    </g:radioGroup>
 				</td>
 			    </tr>
 			    <tr>				
 				<td><g:submitButton name = "search" value = "Search" /></td>
 			    </tr>
-
 			</g:form>
-		  </table>
-		
+		  </table>		
 	</formset>	    
   </div>
 </body>

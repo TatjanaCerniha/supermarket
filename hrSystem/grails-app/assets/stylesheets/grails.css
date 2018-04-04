@@ -286,7 +286,7 @@ article .content time {
 
 .anchor-link:before {
     content: ' # ';
-    color: lightgray;
+    color: #cc0000;
 }
 
 .anchor-link:hover:before {
@@ -386,7 +386,7 @@ a {
 }
 
 a:hover {
-    color: #FFFFFF;
+    color: #b32400;
     text-decoration: none
 }
 

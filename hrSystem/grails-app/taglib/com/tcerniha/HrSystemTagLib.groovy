@@ -15,11 +15,11 @@ class HrSystemTagLib {
 		  	out << " Welcome ${session.user}."
 			out << "</span><span style ='float:right;margin-right:20px'>"	
 
-			//if the session has been created Create LOGOUT link
+			//if the session has been created for Manager then create LOGOUT link
 		  	 out << "<a href='${createLink(controller:'manager',action:'logout')}'>"
 			 out << "Logout</a></span>"
 
-			//if the session has been created Create LOGOUT link
+			//if the session has been created for TeamLeader then create LOGOUT link
 		  	 out << "<a href='${createLink(controller:'teamLeader',action:'logout')}'>"
 			 out << "Logout</a></span>"
 		   }
