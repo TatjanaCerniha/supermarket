@@ -15,30 +15,24 @@
 </head>
 <body>
 
-    <!-- <div class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/#">
-		    <asset:image src="grails.svg" alt="Grails Logo"/>
-                </a>
-            </div>
-            <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
-                <ul class="nav navbar-nav navbar-right">
-                    <g:pageProperty name="page.nav" />
-                </ul>
-            </div>
-        </div>
-    </div>  -->
+    
 	<div class= "row">
 		<asset:image src = "supermarket.jpg"  align= "center"  width = "900px" height="300" />
 		<g:loginToggle />
 	</div>
+	<!----------------------------- nav bar----------------------------->
+	<!-- <nav class="navbar navbar-default">
+     <div class="container-fluid">
+     <!-- <div class="navbar-header">
+       <a class="navbar-brand" href="/">Supermarket</a>
+     </div> -->
+   <!-- <ul class="nav navbar-nav"> -->
+    <!-- <li class="active"><a href='${createLink(controller:'home')}'>Home</a></li> -->
+     <!-- <li>  <g:link controller = "manager" action = "home">Search Employee</g:link></li> 
+	
+    </ul>
+  </div>
+</nav> -->
 
     <g:layoutBody/>
 

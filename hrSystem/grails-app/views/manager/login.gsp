@@ -17,7 +17,7 @@
 	<g:form action= "validate">
 		<input type = "hidden" name= "cName" value = "${cName}">
 		<input type = "hidden" name= "aName" value = "${aName}">
-
+		<h2 align = "center">Manager Login System</h2>
 		<table>
        		    <tr class="prop">
          	       <td class="name">

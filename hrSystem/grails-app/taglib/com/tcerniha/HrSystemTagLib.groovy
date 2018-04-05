@@ -10,7 +10,7 @@ class HrSystemTagLib {
 		out << "<div style='margin:5px 0 20px;'>"
       		  if (request.getSession(false) && session.user){
 
-			// this code dispaly Welcome messaage
+			// this code dispaly Welcome message
 			out << "<span style='float:left;margin-left:20px'>"
 		  	out << " Welcome ${session.user}."
 			out << "</span><span style ='float:right;margin-right:20px'>"	
@@ -20,8 +20,9 @@ class HrSystemTagLib {
 			 out << "Logout</a></span>"
 
 			//if the session has been created for TeamLeader then create LOGOUT link
-		  	 out << "<a href='${createLink(controller:'teamLeader',action:'logout')}'>"
-			 out << "Logout</a></span>"
+		  	// out << "<a href='${createLink(controller:'teamLeader',action:'logout')}'>"
+			// out << "Logout</a></span>"
+			
 		   }
 			//if a session has been not created a LOGIN link is created
 		else {	

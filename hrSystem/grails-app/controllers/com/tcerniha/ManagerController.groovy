@@ -17,7 +17,7 @@ class ManagerController {
 			render view:'home'
 		}
 		else {
-			flash.message = "Invalid username and password"
+			flash.message = "Invalid username or password"
 			render view:'login'
 		}
 	}

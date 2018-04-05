@@ -19,7 +19,7 @@
 		<g:link controller = "teamLeader" action = "create">Team Leader</g:link><br>
 		<g:link controller = "shift" action = "create">Shift</g:link><br> -->
 
-               ffsfsf
+               
             </div>
         </section>
     </div>

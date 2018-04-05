@@ -15,7 +15,7 @@ class ShiftSpec extends Specification implements DomainUnitTest<Shift> {
        when:"Shift is created with time Of Day and number Of Hours"
 	def shiftMon = new Shift(
 		timeOfDay: 'Morning',
-		numberOfHours: 4
+		numberOfHours: 2
 	)
 	then: 'Validation should fail'
 	shiftMon.validate()

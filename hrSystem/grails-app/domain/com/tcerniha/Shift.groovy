@@ -5,7 +5,6 @@ class Shift {
 	String dayOfWeek
 	int numberOfHours
 	String startingTime
-
 	
  
 	String toString(){
